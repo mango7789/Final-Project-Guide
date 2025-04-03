@@ -14,7 +14,7 @@ import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-i
 import { transformerTwoslash } from '@shikijs/vitepress-twoslash';
 
 export const shared = defineConfig({
-  title: 'COMP101',
+  title: '数据库及实现',
   lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,
@@ -27,7 +27,7 @@ export const shared = defineConfig({
     plugins: [
       GitChangelog({
         maxGitLogCount: 2000,
-        repoURL: () => 'https://github.com/FDUCSLG/COMP101',
+        repoURL: () => 'https://github.com',
       }),
       GitChangelogMarkdownSection({
         exclude: (id) => id.endsWith('index.md'),

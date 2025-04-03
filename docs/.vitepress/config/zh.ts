@@ -2,7 +2,7 @@ import { defineConfig, type DefaultTheme } from 'vitepress'
 
 export const zh = defineConfig({
   lang: 'zh-CN',
-  description: 'FDUer 计算机入门指南',
+  description: '',
 
   themeConfig: {
     nav: nav(),
@@ -10,7 +10,7 @@ export const zh = defineConfig({
     sidebar: sidebarGuide(),
 
     editLink: {
-      pattern: 'https://github.com/FDUCSLG/COMP101/edit/main/docs/:path',
+      pattern: 'https://github.com/',
       text: '在 GitHub 上编辑此页面'
     },
 
@@ -52,44 +52,26 @@ function nav(): DefaultTheme.NavItem[] {
 
 function sidebarGuide(): DefaultTheme.Sidebar {
   return [
-    // {
-    //   text: "课程",
-    //   collapsible: true,
-    //   collapsed: false,
-    //   items: [
-    //     { text: "计算机系统基础", link: "/courses/ICS" },
-    //   ],
-    // },
+    { text: "前言", link: "/introduction"},
     {
-      text: "实用工具",
+      text: "开发工具",
       collapsible: true,
       collapsed: false,
       items: [
-        { text: "Markdown 入门", link: "/tools/markdown1" },
-        { text: "Markdown 进阶", link: "/tools/markdown2" },
-        { text: "LaTeX", link: "/tools/latex" },
-        { text: "Git & GitHub", link: "/tools/git-and-github" },
-        { text: "Docker", link: "/tools/docker" },
+        { text: "MySQL", link: "/tools/mysql"},
+        { text: "VSCode", link: "/tools/vscode"},
+        { text: "Git & GitHub", link: "/tools/git-and-github" }
       ],
     },
     {
-      text: "项目构建",
+      text: "项目示例",
       collapsible: true,
       collapsed: false,
       items: [
-        { text: "Make 入门", link: "/tools/intro-make" },
-      ],
+
+      ]
     },
-    {
-       text: "Linux & Shell",
-       collapsible: true,
-       collapsed: false,
-       items: [
-         { text: "基本命令行常识", link: "/linux-and-shell/basic-command-line" },
-         { text: "发行版相关", link: "/linux-and-shell/on-distros" },
-        ],
-    },
-    { text: "关于 COMP101 项目", link: "/project" },
-    { text: "关于我们", link: "/team" },
+    { text: "注意事项", link: "/caution" },
+    { text: "往年优秀作品", link: "/templates" },
   ]
 }
