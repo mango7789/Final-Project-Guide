@@ -13,7 +13,7 @@
   > 原因是 MySQL 需要管理员权限才能在 C 盘下创建目录。
 - MySQL 默认使用端口号 3306。如果在安装过程中设置了其他端口号，请务必记录下来。后续在使用 Django 连接 MySQL 数据库时，需要提供端口号。
 - 请妥善记住 MySQL 安装过程中设置的 `root` 密码，该密码在启动 MySQL 服务器及连接数据库时都需要使用。
-- 若在 PowerShell 中运行 `mysql` 命令时遇到以下报错，请将 `C:\Program Files\MySQL\MySQL Server 8.0\bin` 目录添加到系统的环境变量中：
+- 若在 PowerShell 中运行 `mysql` 命令时遇到以下报错，请将 `C:\Program Files\MySQL\MySQL Server 8.0\bin` 目录添加到系统的环境变量中
   ```text
   mysql : 无法将“mysql”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。
   请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
